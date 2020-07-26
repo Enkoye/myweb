@@ -1,0 +1,98 @@
+/*---------------------------------------------------------
+* Template Name    : Sophia | Responsive Personal Template
+* Author           : CasanovasThemes
+* Version          : 1.0
+* Created          : March 2020
+* File Description : CSS General
+*----------------------------------------------------------
+*/
+/***************************
+AUDIO
+****************************/
+.site-sound{
+	position: fixed;
+	z-index: 1111;
+	right: 3px;
+    top: 100px;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    border: 0 none;
+    outline: none;
+    background: #ab5256;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+    border-radius: 5px;
+}
+.site-sound .pulsing-ui{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 6px;
+    width: 6px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #fff;
+}
+.site-sound .soundOn{
+    display: block;
+}
+.site-sound .soundOn:after, .site-sound .soundOn:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    content: "";
+    z-index: -1;
+}
+.site-sound .soundOn:after{
+    -webkit-transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%,-50%) scale(0);
+    -webkit-animation: 1.6s linear infinite;
+    animation: 1.6s linear infinite;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation-name: wave;
+}
+.site-sound .soundOn:before{
+    -webkit-transform: translate(-50%,-50%) scale(1);
+    transform: translate(-50%,-50%) scale(1);
+    -webkit-animation: 1.6s linear infinite;
+    animation: 1.6s linear infinite;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation-name: wave;
+    animation-delay: .8s;
+    -webkit-animation-delay: .8s;
+}
+.sound-txt{
+    position: fixed;
+    right: 9px;
+    top: 147px;
+    font-size: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+@keyframes wave {
+  from {
+  	-webkit-transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 1;
+  }
+  to {
+  	-webkit-transform: translate(-50%,-50%) scale(1);
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 0;
+  }
+}
+@media only screen and (max-width : 700px) {
+    .site-sound{
+        display: none;
+    }
+    .sound-txt{
+        display: none;
+    }
+}

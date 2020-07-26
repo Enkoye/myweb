@@ -1,0 +1,213 @@
+
+/*
+[Table of contents]
+
+1. BACKGROUND COLOR / BACKGROUND IMAGE SECTION
+2. STRUCTURE / CONTAINER SECTION
+3. HEADER SECTION
+4. CONTENT SECTION
+5. FORM CONTACT
+6. MEDIA QUERIES
+-------------------------------------------------------------------*/
+/***************************
+1. BACKGROUND COLOR / BACKGROUND IMAGE SECTION
+****************************/
+#contact{
+	background-color: #f7f0eb;
+	color: #171716;
+  position: relative;
+}
+#backgroundMapImage{
+  background-image: url(../images/map_img.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.6;
+}
+/***************************
+2. STRUCTURE / CONTAINER SECTION
+****************************/
+#contact .grid-container {
+  display: grid;
+  grid-template-columns: calc(50% - 40px) calc(50% - 40px);
+  grid-template-rows: auto 1fr;
+  padding: 120px 80px;
+  grid-gap: 10px 80px;
+}
+/***************************
+3. HEADER SECTION
+****************************/
+#contact .headerSection{
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 3;
+  text-align: center;
+}
+#contact .headerSection h2{
+	position: relative;
+}
+#contact .span-wrapper span{
+    color: #e3dbd5;
+}
+/***************************
+4. CONTENT SECTION
+****************************/
+#contact .col-left, #contact .col-right{
+  padding: 25px 0;
+}
+#contact h3{
+  font-family: 'montserrat-extraBold';
+  font-size: 35px;
+  color: #ab5256;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+#contact h4{
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 55px;
+}
+#contact .icons{
+  font-size: 27px;
+  color: #ab5256;
+}
+#contact .wrap-icon{
+  position: absolute;
+  top: 17px;
+  width: 35px;
+  text-align: center;
+}
+#pointer{
+  font-size: 35px !important;
+}
+#contact h4 label{
+  font-weight: 700;
+}
+#contact h4 span{
+  font-weight: 400;
+}
+#contact ul{
+  list-style-type: none;
+  padding: 0;
+}
+#contact ul li{
+  position: relative;
+}
+.no-display{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -99999;
+}
+#contact .col-left ul li:last-child{
+  margin-top: 40px;
+}
+#contact .social-media{
+  margin-right: 30px;
+  font-size: 30px;
+  color: #575152;
+  text-decoration: none;
+}
+#icons-social a:nth-child(1){
+  font-size: 28px!important;
+}
+#icons-social a:nth-child(2){
+  font-size: 25px!important;
+}
+#contact .social-media i{
+  display: inline-block;
+  transition: all 0.4s;
+}
+#contact .social-media:hover i{
+  transform: rotateY(360deg);
+  color: #ab5256;
+}
+/***************************
+5. FORM CONTACT
+****************************/
+input[type=text], input[type=email], input[type=tel], textarea {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: none;
+  border: 1px solid #575152;
+  background-color: transparent;
+  color: #575152;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+textarea{
+  height: 100px;
+}
+#feedback{
+  margin-bottom: 50px;
+}
+/*Button Contact*/
+#contact .centerButton{
+  width: 100%;
+}
+/***************************
+6. MEDIA QUERIES
+****************************/
+@media only screen and (max-width : 1050px) {
+  #contact .grid-container {
+    padding: 120px 80px;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    grid-gap: 10px 20px;
+  }
+  #contact .col-left div{
+    margin: 0;
+  }
+  #contact .col-right{
+    text-align: center;
+  }
+  #contact form{
+    padding: 0;
+  }
+  input[type=text], input[type=email], input[type=tel], textarea {
+    max-width: 100%;
+  }
+  #contact .centerButton{
+    margin: 50px 0;
+    text-align: left;
+  }
+  #contact h3{
+    font-size: 25px;
+  }
+  #contact button{
+    background-color: #ab5256;
+  }
+  #contact button span{
+    color: #fff !important;
+  }
+}
+@media only screen and (max-width : 900px) {
+  #contact .grid-container {
+    grid-template-columns: 100%;
+  }
+  #contact .headerSection{
+    grid-column: 1 / 1;
+  }
+}
+@media only screen and (max-width : 700px) {
+	#contact .grid-container {
+		padding: 120px 40px;
+	}
+}
+@media only screen and (max-width : 350px) {
+	#contact .grid-container {
+		padding: 120px 20px;
+	}
+}

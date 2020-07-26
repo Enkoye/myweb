@@ -1,0 +1,154 @@
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. GENERAL
+2. SERVICES SECTION
+3. ABOUT SECTION
+4. BLOG SECTION
+5. CONTACT SECTION
+-------------------------------------------------------------------*/
+/***************************
+1. GENERAL
+****************************/
+.logo{
+  padding: 40px 0;
+}
+.logo span{
+  top: 10px;
+}
+.button-row > div > a:hover, .button-row > div > button:hover {
+  -ms-transform: none;
+}
+.container-header{
+  zoom:100%!important;
+}
+.container-allPage{
+  zoom:100%!important;
+  transform-origin: center;
+}
+#inner-popUp{
+  zoom:100%!important;
+}
+@media only screen and (min-width : 1050px) and (max-width : 1500px) {
+  #header_nav{
+    height: 61px!important;
+  }
+}
+/***************************
+2. SERVICES SECTION
+****************************/
+#services .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+}
+#services .col{
+  margin: 15px;
+}
+#services .cell-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+#services .cell-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+#services .cell-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+#services .cell-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+#services .cell-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+#services .cell-6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+/***************************
+3. ABOUT SECTION
+****************************/
+#about .grid-container{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 1fr ;
+  -ms-grid-columns: 1fr 3fr;
+}
+#about .grid-container2{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr ;
+  -ms-grid-columns: 1fr 1fr;
+}
+#about .grid-container .col-1{
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+#about .grid-container .col-2{
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  margin-left: 120px;
+}
+#about .grid-container2 .col-1{
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  margin-right: 60px;
+}
+#about .grid-container2 .col-2{
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  margin-left: 60px;
+}
+/***************************
+4. BLOG SECTION
+****************************/
+#blog .grid-container{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+}
+#blog .col{
+  margin: 15px;
+}
+#blog .col-0 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+#blog .col-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+#blog .col-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+#blog .col .marginTopText > p:nth-child(2) {
+  height: 180px;
+}
+/***************************
+5. CONTACT SECTION
+****************************/
+#contact .grid-container{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 1fr;
+  -ms-grid-columns: 1fr 1fr;
+}
+#contact .col-left{
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+#contact .col-right{
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
